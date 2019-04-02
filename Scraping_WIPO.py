@@ -1,17 +1,20 @@
 
+# The following script provide 74 millions of registers about patents. This informations is retrieved from WIPO dataset.
+# Variables are: 
+
+# 'year': year that the patent was granted
+# 'date': includes day, month and year
+# 'country':  country office from which the patent was granted
+# 'inventor': person who registered the patent. The owner
+# 'insitution': inventor's affiliation
+
+#CHANGE THE chromedriver PATH
+
 import time
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
-#from googletrans import Translator
-#from py_translator import Translator
-
-
-
-#options = webdriver.ChromeOptions()
-#options.add_argument('--ignore-certificate-errors')
-#options.add_argument("--test-type")
 
 chromedriver = 'C:/Users/juan.diaz/Desktop/chromedriver'
 driver = webdriver.Chrome(chromedriver)
